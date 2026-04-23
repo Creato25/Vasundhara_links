@@ -3,7 +3,6 @@
 <head>
   <title>Vasundhara Healing Lounge</title>
 
-  <!-- ✅ Mobile responsive -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
@@ -19,9 +18,10 @@
 
       padding-top: 40px;
       min-height: 100vh;
+      overflow-x: hidden;
     }
 
-    /* 🌿 BACKGROUND + OVERLAY FIX */
+    /* 🌿 BACKGROUND + OVERLAY */
     .bg {
       position: fixed;
       top: 0;
@@ -37,24 +37,36 @@
       z-index: -1;
     }
 
-    /* 🎯 Container */
+    /* ✨ Fade-in animation */
     .container {
       width: 100%;
       max-width: 420px;
       padding: 0 15px;
+
+      animation: fadeUp 0.8s ease;
     }
 
-    /* LOGO */
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
     .logo {
       width: 230px;
       max-width: 85%;
+      margin-bottom: 10px;
     }
 
-    /* TEXT */
     .tagline {
       letter-spacing: 2px;
       font-size: 13px;
-      margin: 15px 0 25px;
+      margin: 10px 0 25px;
       color: #8c6b4f;
     }
 
@@ -69,21 +81,21 @@
       font-size: 14px;
     }
 
-    /* BUTTONS */
+    /* 💎 GLASS BUTTONS */
     .card {
       width: 100%;
-      margin: 10px 0;
+      margin: 12px 0;
       padding: 14px;
       border-radius: 16px;
 
-      background: rgba(255,255,255,0.85);
-      backdrop-filter: blur(8px);
+      background: rgba(255,255,255,0.75);
+      backdrop-filter: blur(10px);
 
       display: flex;
       align-items: center;
       justify-content: space-between;
 
-      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
       text-decoration: none;
       color: inherit;
 
@@ -92,7 +104,8 @@
     }
 
     .card:hover {
-      transform: scale(1.04);
+      transform: scale(1.05);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.12);
     }
 
     .left {
@@ -119,10 +132,8 @@
 
 <body>
 
-  <!-- 🌿 BACKGROUND LAYER -->
   <div class="bg"></div>
 
-  <!-- MAIN CONTENT -->
   <div class="container">
 
     <img src="logo.png" class="logo">
@@ -143,11 +154,20 @@
       <div class="arrow">›</div>
     </a>
 
-    <!-- Google -->
+    <!-- Google Reviews -->
     <a href="https://share.google/Ocm6NvcWWnpt75Lv4" class="card">
       <div class="left">
         <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" class="icon">
         <div class="text">Google</div>
+      </div>
+      <div class="arrow">›</div>
+    </a>
+
+    <!-- 📍 Google Maps Location -->
+    <a href="https://www.google.com/maps/place/Vasundhara+Healing+Lounge/@15.4935905,73.8192045,17z/data=!3m1!4b1!4m6!3m5!1s0x3bbfc179e64e9fcf:0x77bda6f426642d24!8m2!3d15.4935905!4d73.8192045!16s%2Fg%2F11n9xshp3b?entry=ttu&g_ep=EgoyMDI2MDQyMS4wIKXMDSoASAFQAw%3D%3D" class="card">
+      <div class="left">
+        <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" class="icon">
+        <div class="text">Location</div>
       </div>
       <div class="arrow">›</div>
     </a>
