@@ -1,44 +1,120 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Vasundhara Links</title>
+  <title>Vasundhara Healing Lounge</title>
+
   <style>
     body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f1eb;
       text-align: center;
-      font-family: Arial;
-      background: #0f172a;
-      color: white;
-      margin-top: 100px;
+      color: #3b2a1f;
     }
-    h2 {
-      margin-bottom: 40px;
+
+    .top {
+      padding: 30px 20px 10px;
     }
-    button {
-      padding: 15px 30px;
-      margin: 15px;
+
+    .logo {
+      width: 260px;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: 34px;
+      margin: 10px 0 5px;
+    }
+
+    .tagline {
+      letter-spacing: 2px;
+      font-size: 14px;
+      margin-bottom: 30px;
+      color: #8c6b4f;
+    }
+
+    .welcome {
+      font-size: 28px;
+      margin-top: 20px;
+    }
+
+    .sub {
+      color: #6e5a4a;
+      margin-bottom: 30px;
+    }
+
+    .card {
+      width: 85%;
+      max-width: 350px;
+      margin: 15px auto;
+      padding: 18px;
+      border-radius: 18px;
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      text-decoration: none;
+      color: inherit;
+      transition: 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .left {
+      display: flex;
+      align-items: center;
+    }
+
+    .icon {
+      width: 40px;
+      margin-right: 15px;
+    }
+
+    .text {
       font-size: 18px;
-      border: none;
-      border-radius: 12px;
-      cursor: pointer;
     }
-    .insta {
-      background: #E1306C;
+
+    .arrow {
+      font-size: 20px;
+      color: #b08b5a;
     }
-    .google {
-      background: #4285F4;
-    }
+
   </style>
 </head>
 
 <body>
-  <h2>Choose where to go</h2>
 
-  <a href="https://instagram.com/YOUR_LINK" target="_blank">
-    <button class="insta">Instagram</button>
+  <div class="top">
+    <!-- LOGO (upload your image to GitHub and replace file name below) -->
+    <img src="logo.png" class="logo">
+
+    <div class="tagline">
+      RELAX • REJUVINATE • HEAL
+    </div>
+  </div>
+
+  <div class="welcome">Welcome</div>
+  <div class="sub">Choose an option below to connect with us</div>
+
+  <!-- Instagram -->
+  <a href="https://www.instagram.com/vasundhara.healing.lounge?igsh=MWNpOGtudHZ5N3RmMw==" class="card">
+    <div class="left">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" class="icon">
+      <div class="text">Instagram</div>
+    </div>
+    <div class="arrow">›</div>
   </a>
 
-  <a href="https://google.com" target="_blank">
-    <button class="google">Google</button>
+  <!-- Google -->
+  <a href="https://share.google/Ocm6NvcWWnpt75Lv4" class="card">
+    <div class="left">
+      <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" class="icon">
+      <div class="text">Google</div>
+    </div>
+    <div class="arrow">›</div>
   </a>
 
 </body>
