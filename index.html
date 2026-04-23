@@ -3,6 +3,9 @@
 <head>
   <title>Vasundhara Healing Lounge</title>
 
+  <!-- ✅ Makes it responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
       margin: 0;
@@ -10,57 +13,73 @@
       background: #f5f1eb;
       text-align: center;
       color: #3b2a1f;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    /* 🌿 Leaf background */
+    body::before {
+      content: "";
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: url('https://png.pngtree.com/png-clipart/20221018/original/pngtree-green-leaf-shadow-overlay-png-image_8702766.png');
+      background-size: cover;
+      opacity: 0.08;
+      z-index: -1;
     }
 
     .top {
-      padding: 30px 20px 10px;
+      padding-top: 20px;
     }
 
     .logo {
-      width: 260px;
-      margin-bottom: 10px;
-    }
-
-    h1 {
-      font-size: 34px;
-      margin: 10px 0 5px;
+      width: 180px;
+      max-width: 80%;
     }
 
     .tagline {
       letter-spacing: 2px;
-      font-size: 14px;
-      margin-bottom: 30px;
+      font-size: 13px;
+      margin: 15px 0 25px;
       color: #8c6b4f;
     }
 
     .welcome {
-      font-size: 28px;
-      margin-top: 20px;
+      font-size: 26px;
+      margin-top: 10px;
     }
 
     .sub {
       color: #6e5a4a;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
+      font-size: 14px;
+      padding: 0 20px;
     }
 
     .card {
-      width: 85%;
-      max-width: 350px;
-      margin: 15px auto;
-      padding: 18px;
-      border-radius: 18px;
+      width: 90%;
+      max-width: 380px;
+      margin: 12px auto;
+      padding: 16px;
+      border-radius: 16px;
       background: #ffffff;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
       text-decoration: none;
       color: inherit;
-      transition: 0.2s;
+      transition: 0.25s;
+      border: 1px solid rgba(0,0,0,0.05);
     }
 
     .card:hover {
-      transform: scale(1.03);
+      transform: scale(1.04);
     }
 
     .left {
@@ -69,12 +88,12 @@
     }
 
     .icon {
-      width: 40px;
-      margin-right: 15px;
+      width: 36px;
+      margin-right: 12px;
     }
 
     .text {
-      font-size: 18px;
+      font-size: 17px;
     }
 
     .arrow {
@@ -88,7 +107,7 @@
 <body>
 
   <div class="top">
-    <!-- LOGO (upload your image to GitHub and replace file name below) -->
+    <!-- 🔁 Make sure this matches your uploaded file -->
     <img src="logo.png" class="logo">
 
     <div class="tagline">
