@@ -21,7 +21,7 @@
       overflow-x: hidden;
     }
 
-    /* 🌿 BACKGROUND + OVERLAY */
+    /* 🌿 Background + overlay */
     .bg {
       position: fixed;
       top: 0;
@@ -37,24 +37,17 @@
       z-index: -1;
     }
 
-    /* ✨ Fade-in animation */
+    /* ✨ Animation */
     .container {
       width: 100%;
       max-width: 420px;
       padding: 0 15px;
-
       animation: fadeUp 0.8s ease;
     }
 
     @keyframes fadeUp {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     .logo {
@@ -81,7 +74,6 @@
       font-size: 14px;
     }
 
-    /* 💎 GLASS BUTTONS */
     .card {
       width: 100%;
       margin: 12px 0;
@@ -145,6 +137,24 @@
     <div class="welcome">Welcome</div>
     <div class="sub">Choose an option below to connect with us</div>
 
+    <!-- 💰 WhatsApp (TOP PRIORITY) -->
+    <a href="https://wa.me/918668337571?text=Hi%20I%20want%20to%20book%20a%20session%20at%20Vasundhara%20Healing%20Lounge" class="card">
+      <div class="left">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" class="icon">
+        <div class="text">WhatsApp</div>
+      </div>
+      <div class="arrow">›</div>
+    </a>
+
+    <!-- 📍 Location -->
+    <a href="https://www.google.com/maps/place/Vasundhara+Healing+Lounge/@15.4935905,73.8192045,17z/data=!3m1!4b1!4m6!3m5!1s0x3bbfc179e64e9fcf:0x77bda6f426642d24!8m2!3d15.4935905!4d73.8192045!16s%2Fg%2F11n9xshp3b?entry=ttu&g_ep=EgoyMDI2MDQyMS4wIKXMDSoASAFQAw%3D%3D" class="card">
+      <div class="left">
+        <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" class="icon">
+        <div class="text">Location</div>
+      </div>
+      <div class="arrow">›</div>
+    </a>
+
     <!-- Instagram -->
     <a href="https://www.instagram.com/vasundhara.healing.lounge?igsh=MWNpOGtudHZ5N3RmMw==" class="card">
       <div class="left">
@@ -154,20 +164,11 @@
       <div class="arrow">›</div>
     </a>
 
-    <!-- Google Reviews -->
+    <!-- Google -->
     <a href="https://share.google/Ocm6NvcWWnpt75Lv4" class="card">
       <div class="left">
         <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" class="icon">
         <div class="text">Google</div>
-      </div>
-      <div class="arrow">›</div>
-    </a>
-
-    <!-- 📍 Google Maps Location -->
-    <a href="https://www.google.com/maps/place/Vasundhara+Healing+Lounge/@15.4935905,73.8192045,17z/data=!3m1!4b1!4m6!3m5!1s0x3bbfc179e64e9fcf:0x77bda6f426642d24!8m2!3d15.4935905!4d73.8192045!16s%2Fg%2F11n9xshp3b?entry=ttu&g_ep=EgoyMDI2MDQyMS4wIKXMDSoASAFQAw%3D%3D" class="card">
-      <div class="left">
-        <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" class="icon">
-        <div class="text">Location</div>
       </div>
       <div class="arrow">›</div>
     </a>
