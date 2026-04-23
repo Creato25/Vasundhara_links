@@ -5,10 +5,15 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- 🔥 PREMIUM FONTS -->
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
   <style>
+
+    * {
+      box-sizing: border-box; /* 🔥 IMPORTANT FIX */
+    }
+
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
@@ -21,10 +26,10 @@
 
       padding: 30px 0;
       min-height: 100vh;
-      overflow-x: hidden;
+      overflow-x: hidden; /* 🔥 prevents side scroll */
     }
 
-    /* 🌿 Background */
+    /* Background */
     .bg {
       position: fixed;
       top: 0;
@@ -41,33 +46,17 @@
     /* Container */
     .container {
       width: 100%;
-      max-width: 380px;
-      padding: 0 18px;
-      box-sizing: border-box;
-
-      animation: fadeUp 0.8s ease;
+      max-width: 360px; /* 🔥 slightly tighter */
+      padding: 0 16px;
+      margin: 0 auto;
     }
 
-    /* Animation */
-    @keyframes fadeUp {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    /* Logo */
     .logo {
-      width: 220px;
+      width: 210px;
       max-width: 85%;
       margin-bottom: 10px;
     }
 
-    /* Tagline */
     .tagline {
       letter-spacing: 2px;
       font-size: 12px;
@@ -75,10 +64,9 @@
       color: #8c6b4f;
     }
 
-    /* Headings */
     .welcome {
       font-family: 'Playfair Display', serif;
-      font-size: 26px;
+      font-size: 24px;
       margin-top: 5px;
       font-weight: 600;
     }
@@ -93,7 +81,7 @@
     .card {
       width: 100%;
       margin: 10px 0;
-      padding: 14px 16px;
+      padding: 14px;
       border-radius: 16px;
 
       background: rgba(255,255,255,0.78);
@@ -107,13 +95,7 @@
       text-decoration: none;
       color: inherit;
 
-      transition: 0.25s;
       border: 1px solid rgba(0,0,0,0.05);
-    }
-
-    .card:hover {
-      transform: scale(1.04);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
     }
 
     .left {
@@ -122,7 +104,7 @@
     }
 
     .icon {
-      width: 32px;
+      width: 30px;
       margin-right: 12px;
     }
 
