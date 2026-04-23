@@ -3,7 +3,6 @@
 <head>
   <title>Vasundhara Healing Lounge</title>
 
-  <!-- ✅ Mobile responsive -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
@@ -20,21 +19,27 @@
 
       padding-top: 40px;
       min-height: 100vh;
-      position: relative;
 
-      /* 🌿 YOUR BACKGROUND IMAGE */
-      background: url('background.png') no-repeat center center fixed;
+      /* ✅ IMPORTANT FIX */
+      background: url('background.png') no-repeat center center;
       background-size: cover;
     }
 
-    /* 🔥 Soft overlay for readability */
+    /* ✅ FIXED OVERLAY (lighter + mobile safe) */
     body::before {
       content: "";
       position: fixed;
       width: 100%;
       height: 100%;
-      background: rgba(245, 241, 235, 0.88);
+      background: rgba(245, 241, 235, 0.6); /* was 0.88 → too strong */
       z-index: -1;
+    }
+
+    /* 🔥 Center container (makes UI feel premium) */
+    .container {
+      width: 100%;
+      max-width: 420px;
+      padding: 0 15px;
     }
 
     .logo {
@@ -58,16 +63,16 @@
       color: #6e5a4a;
       margin-bottom: 25px;
       font-size: 14px;
-      padding: 0 20px;
     }
 
     .card {
-      width: 90%;
-      max-width: 360px;
-      margin: 10px auto;
+      width: 100%;
+      margin: 10px 0;
       padding: 14px;
       border-radius: 16px;
+
       background: rgba(255,255,255,0.85);
+      backdrop-filter: blur(8px);
 
       display: flex;
       align-items: center;
@@ -79,8 +84,6 @@
 
       transition: 0.25s;
       border: 1px solid rgba(0,0,0,0.05);
-
-      backdrop-filter: blur(8px);
     }
 
     .card:hover {
@@ -111,35 +114,36 @@
 
 <body>
 
-  <!-- LOGO -->
-  <img src="logo.png" class="logo">
+  <div class="container">
 
-  <!-- TAGLINE -->
-  <div class="tagline">
-    RELAX • REJUVINATE • HEAL
+    <img src="logo.png" class="logo">
+
+    <div class="tagline">
+      RELAX • REJUVINATE • HEAL
+    </div>
+
+    <div class="welcome">Welcome</div>
+    <div class="sub">Choose an option below to connect with us</div>
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/vasundhara.healing.lounge?igsh=MWNpOGtudHZ5N3RmMw==" class="card">
+      <div class="left">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" class="icon">
+        <div class="text">Instagram</div>
+      </div>
+      <div class="arrow">›</div>
+    </a>
+
+    <!-- Google -->
+    <a href="https://share.google/Ocm6NvcWWnpt75Lv4" class="card">
+      <div class="left">
+        <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" class="icon">
+        <div class="text">Google</div>
+      </div>
+      <div class="arrow">›</div>
+    </a>
+
   </div>
-
-  <!-- TEXT -->
-  <div class="welcome">Welcome</div>
-  <div class="sub">Choose an option below to connect with us</div>
-
-  <!-- Instagram -->
-  <a href="https://www.instagram.com/vasundhara.healing.lounge?igsh=MWNpOGtudHZ5N3RmMw==" class="card">
-    <div class="left">
-      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" class="icon">
-      <div class="text">Instagram</div>
-    </div>
-    <div class="arrow">›</div>
-  </a>
-
-  <!-- Google -->
-  <a href="https://share.google/Ocm6NvcWWnpt75Lv4" class="card">
-    <div class="left">
-      <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" class="icon">
-      <div class="text">Google</div>
-    </div>
-    <div class="arrow">›</div>
-  </a>
 
 </body>
 </html>
